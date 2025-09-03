@@ -1,5 +1,42 @@
 ---
-title: "index"
-output: html_document
+title: "Neena Varanasi"
+image: "headshot.jpg"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/neena-varanasi"
+  - label: Github
+    url: "https://github.com/Neena05"
+output:
+  postcards::solana
 ---
+ 
+## About Me
+
+Neena Varanasi is a junior majoring in Statistics and Data Science at the University of Texas at Austin. She is a member of the Polymathic Honors Program and is pursuing certificates in Programming and Computation as well as Evidence and Inquiry. Neena’s academic interests include bioinformatics and machine learning, where she enjoys exploring how data-driven methods can advance scientific discovery. Outside of school, she loves listening to music, trying new restaurants, and traveling.
+
+
+## Experience
+- **AstraZeneca** | Operations Data Science Intern | May 2025 – Present  
+- **The Daily Texan** | Data Scientist | January 2025 – Present  
+- **Big Data in Biology Lab, UT Austin** | Undergraduate Peer Mentor & Research Assistant | January 2024 – Present  
+- **First Principles Dental Training** | Software Engineer | February 2025 – May 2025  
+
+## Projects
+
+- **Analysis of Emotional Responses to Music Through EEG** | May 2025  
+  Predicted emotions felt by participants listening to film music clips using EEG data by modeling mean voltages across electrodes to identify the strongest reported emotion for each subject.  
+  
+- [**ALSpeak**](https://www.canva.com/design/DAGVwcM4rZ8/AiJ9NiL2KEFKPfLV2GiWLg/edit?utm_content=DAGVwcM4rZ8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | December 2024  
+  Developed ALS communication app with context-aware features and natural voice replication.  
+  Built with React Native, Expo, and Firebase; won Best Business out of 20+ teams at Convergent.  
+
+- [**Predicting Grammy Award Winners**](https://docs.google.com/presentation/d/1P4WxhY-2f9dtdVNsPwbSTlfPHEAENbInkWSavk7-ym8/edit?usp=sharing)| December 2024  
+  Built BERT and Logistic Regression models on Pitchfork review data using SMOTE and synthetic generation.  
+  Achieved strong classification performance predicting Grammy winners from music reviews.  
+
+- [**Gene Expression Profiling in Glioblastoma**](https://docs.google.com/presentation/d/1EwZgOxFjvyW92tEBJ9P29HFSX4dv85XzhZ1HouvF004/edit?usp=sharing)| May 2024  
+  Created ML pipeline with KNN and PCA to identify glioblastoma biomarkers; won 1st place in lab competition.  
+  Reached 80%+ accuracy in distinguishing control vs tumor samples for early diagnosis.  
+
+_Last built on `r format(Sys.time(), "%B %d, %Y at %H:%M:%S %Z")`_
 
