@@ -12,7 +12,7 @@ output:
  
 ## About Me
 
-Neena Varanasi is a junior majoring in Statistics and Data Science at the University of Texas at Austin. She is a member of the Polymathic Honors Program and is pursuing certificates in Programming and Computation as well as Evidence and Inquiry. Neena’s academic interests include bioinformatics and machine learning, where she enjoys exploring how data-driven methods can advance scientific discovery. Outside of school, she loves listening to music, trying new restaurants, and traveling.
+Neena Varanasi is a junior majoring in Statistics and Data Science at the University of Texas at Austin. She is a member of the Polymathic Honors Program and is pursuing certificates in Programming and Computation, Advanced Mathematics, and Evidence and Inquiry. Neena’s academic interests include bioinformatics and machine learning, where she enjoys exploring how data-driven methods can advance scientific discovery. Outside of school, she loves listening to music, trying new restaurants, and traveling.
 
 
 ## Experience
@@ -22,6 +22,13 @@ Neena Varanasi is a junior majoring in Statistics and Data Science at the Univer
 - **First Principles Dental Training** | Software Engineer | February 2025 – May 2025  
 
 ## Projects
+
+- [**Pyschiatric Disorders Research Spotlight**](https://docs.google.com/presentation/d/1rtevznuI4eqKab0YpQJnWnPt-mtpy9PW/edit?usp=sharing&ouid=106448567148067858727&rtpof=true&sd=true) | April 2025  
+  Research project on classifying psychiatric disorders with brain and blood transcriptomic expression. Utilized machine learning feature selection tools and statistical testing.
+
+- [**Daily Texan Story Spotlight**](https://thedailytexan.com/2025/04/22/local-businesses-on-guad-ride-austins-economic-waves-through-the-decades/) | April 2025  
+  One of my favorite Daily Texan stories I worked on was “Local businesses on Guad ride Austin’s economic waves through the decades.” I cleaned and combined data from 5+ sources to create the three graphs, showing how local businesses mirror Austin’s economic ups and downs.
+  
 
 - **Analysis of Emotional Responses to Music Through EEG** | May 2025  
   Predicted emotions felt by participants listening to film music clips using EEG data by modeling mean voltages across electrodes to identify the strongest reported emotion for each subject.  
