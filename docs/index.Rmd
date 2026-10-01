@@ -1,49 +1,156 @@
 ---
 title: "Neena Varanasi"
-image: "headshot.jpg"
-links:
-  - label: LinkedIn
-    url: "https://www.linkedin.com/in/neena-varanasi"
-  - label: Github
-    url: "https://github.com/Neena05"
 output:
-  postcards::solana
+  html_document:
+    css: style.css
+    self_contained: true
+    theme: null
+    highlight: null
+    mathjax: null
 ---
- 
-## About Me
 
-Neena Varanasi is a junior majoring in Statistics and Data Science at the University of Texas at Austin. She is a member of the Polymathic Honors Program and is pursuing certificates in Programming and Computation, Advanced Mathematics, and Evidence and Inquiry. Neena’s academic interests include bioinformatics and machine learning, where she enjoys exploring how data-driven methods can advance scientific discovery. Outside of school, she loves listening to music, trying new restaurants, and traveling.
+```{=html}
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <nav class="masthead__menu">
+      <ul>
+        <li class="masthead__menu-item--lg"><a href="#about">Neena Varanasi</a></li>
+        <li class="masthead__menu-item"><a href="#projects">Projects</a></li>
+        <li class="masthead__menu-item"><a href="#experience">Experience</a></li>
+        <li class="masthead__menu-item"><a href="#coursework">Coursework</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
+<div id="main">
+  <div class="sidebar">
+    <div class="author__avatar">
+      <img src="headshot.JPG" alt="Neena Varanasi">
+    </div>
+    <h3 class="author__name">Neena Varanasi</h3>
+    <p class="author__bio">B.S./M.S. in Statistics (4+1) &amp; Data Science<br>University of Texas at Austin<br>Class of 2028</p>
+    <ul class="author__urls">
+      <li>
+        <a href="resume.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          Resume
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Neena05" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/neena-varanasi" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
 
-## Experience
-- **AstraZeneca** | Operations Data Science Intern | May 2025 – Present  
-- **The Daily Texan** | Data Scientist | January 2025 – Present  
-- **Big Data in Biology Lab, UT Austin** | Undergraduate Peer Mentor & Research Assistant | January 2024 – Present  
-- **First Principles Dental Training** | Software Engineer | February 2025 – May 2025  
+  <article class="page">
+    <header id="about">
+      <h1 class="page__title">About Me</h1>
+    </header>
+    <section class="page__content">
 
-## Projects
+      <p>Neena Varanasi is a senior in the 4+1 Master's program in Statistics (undergraduate degree in Statistics and Data Science) at the University of Texas at Austin, Class of May 2028. She is a member of the Polymathic Honors Program, is pursuing a certificate in Programming and Computation, and is minoring in Business and Public Policy. Outside of school, she loves listening to music, trying new restaurants, and traveling.</p>
 
-- [**Pyschiatric Disorders Research Spotlight**](https://docs.google.com/presentation/d/1rtevznuI4eqKab0YpQJnWnPt-mtpy9PW/edit?usp=sharing&ouid=106448567148067858727&rtpof=true&sd=true) | April 2025  
-  Research project on classifying psychiatric disorders with brain and blood transcriptomic expression. Utilized machine learning feature selection tools and statistical testing.
+      <h2 id="projects">Projects</h2>
 
-- [**Daily Texan Story Spotlight**](https://thedailytexan.com/2025/04/22/local-businesses-on-guad-ride-austins-economic-waves-through-the-decades/) | April 2025  
-  One of my favorite Daily Texan stories I worked on was “Local businesses on Guad ride Austin’s economic waves through the decades.” I cleaned and combined data from 5+ sources to create the three graphs, showing how local businesses mirror Austin’s economic ups and downs.
-  
+      <div class="list__item">
+        <h3 class="archive__item-title"><a href="https://docs.google.com/presentation/d/1rtevznuI4eqKab0YpQJnWnPt-mtpy9PW/edit?usp=sharing&ouid=106448567148067858727&rtpof=true&sd=true" target="_blank" rel="noopener">Psychiatric Disorders Research Spotlight</a></h3>
+        <p class="archive__item-meta">Python, R, SVM, RNA-Seq · April 2025</p>
+        <p class="archive__item-excerpt">Research project on classifying psychiatric disorders with brain and blood transcriptomic expression. Utilized machine learning feature selection tools and statistical testing.</p>
+      </div>
 
-- **Analysis of Emotional Responses to Music Through EEG** | May 2025  
-  Predicted emotions felt by participants listening to film music clips using EEG data by modeling mean voltages across electrodes to identify the strongest reported emotion for each subject.  
-  
-- [**ALSpeak**](https://www.canva.com/design/DAGVwcM4rZ8/AiJ9NiL2KEFKPfLV2GiWLg/edit?utm_content=DAGVwcM4rZ8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | December 2024  
-  Developed ALS communication app with context-aware features and natural voice replication.  
-  Built with React Native, Expo, and Firebase; won Best Business out of 20+ teams at Convergent.  
+      <div class="list__item">
+        <h3 class="archive__item-title"><a href="https://thedailytexan.com/2025/04/22/local-businesses-on-guad-ride-austins-economic-waves-through-the-decades/" target="_blank" rel="noopener">Daily Texan Story Spotlight</a></h3>
+        <p class="archive__item-meta">Python, Pandas, Data Visualization · April 2025</p>
+        <p class="archive__item-excerpt">One of my favorite Daily Texan stories I worked on was "Local businesses on Guad ride Austin's economic waves through the decades." I cleaned and combined data from 5+ sources to create the three graphs, showing how local businesses mirror Austin's economic ups and downs.</p>
+      </div>
 
-- [**Predicting Grammy Award Winners**](https://docs.google.com/presentation/d/1P4WxhY-2f9dtdVNsPwbSTlfPHEAENbInkWSavk7-ym8/edit?usp=sharing)| December 2024  
-  Built BERT and Logistic Regression models on Pitchfork review data using SMOTE and synthetic generation.  
-  Achieved strong classification performance predicting Grammy winners from music reviews.  
+      <div class="list__item">
+        <h3 class="archive__item-title">Analysis of Emotional Responses to Music Through EEG</h3>
+        <p class="archive__item-meta">Python, Signal Processing, EEG · May 2025</p>
+        <p class="archive__item-excerpt">Predicted emotions felt by participants listening to film music clips using EEG data by modeling mean voltages across electrodes to identify the strongest reported emotion for each subject.</p>
+      </div>
 
-- [**Gene Expression Profiling in Glioblastoma**](https://docs.google.com/presentation/d/1EwZgOxFjvyW92tEBJ9P29HFSX4dv85XzhZ1HouvF004/edit?usp=sharing)| May 2024  
-  Created ML pipeline with KNN and PCA to identify glioblastoma biomarkers; won 1st place in lab competition.  
-  Reached 80%+ accuracy in distinguishing control vs tumor samples for early diagnosis.  
+      <div class="list__item">
+        <h3 class="archive__item-title"><a href="https://www.canva.com/design/DAGVwcM4rZ8/AiJ9NiL2KEFKPfLV2GiWLg/edit?utm_content=DAGVwcM4rZ8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">ALSpeak</a></h3>
+        <p class="archive__item-meta">React Native, Expo, Firebase · December 2024</p>
+        <p class="archive__item-excerpt">Developed ALS communication app with context-aware features and natural voice replication. Built with React Native, Expo, and Firebase; won Best Business out of 20+ teams at Convergent.</p>
+      </div>
 
-_Last built on `r format(Sys.time(), "%B %d, %Y at %H:%M:%S %Z")`_
+      <div class="list__item">
+        <h3 class="archive__item-title"><a href="https://docs.google.com/presentation/d/1P4WxhY-2f9dtdVNsPwbSTlfPHEAENbInkWSavk7-ym8/edit?usp=sharing" target="_blank" rel="noopener">Predicting Grammy Award Winners</a></h3>
+        <p class="archive__item-meta">BERT, Logistic Regression, SMOTE · December 2024</p>
+        <p class="archive__item-excerpt">Built BERT and Logistic Regression models on Pitchfork review data using SMOTE and synthetic generation. Achieved strong classification performance predicting Grammy winners from music reviews.</p>
+      </div>
 
+      <div class="list__item">
+        <h3 class="archive__item-title"><a href="https://docs.google.com/presentation/d/1EwZgOxFjvyW92tEBJ9P29HFSX4dv85XzhZ1HouvF004/edit?usp=sharing" target="_blank" rel="noopener">Gene Expression Profiling in Glioblastoma</a></h3>
+        <p class="archive__item-meta">Python, KNN, PCA · May 2024</p>
+        <p class="archive__item-excerpt">Created ML pipeline with KNN and PCA to identify glioblastoma biomarkers; won 1st place in lab competition. Reached 80%+ accuracy in distinguishing control vs tumor samples for early diagnosis.</p>
+      </div>
+
+      <h2 id="experience">Experience</h2>
+
+      <div class="list__item">
+        <h3 class="archive__item-title">Department of Statistics &amp; Data Science, UT Austin</h3>
+        <p class="archive__item-role">Machine Learning Undergraduate Course Assistant · Austin, TX · August 2026 – Present</p>
+      </div>
+
+      <div class="list__item">
+        <h3 class="archive__item-title">IBM</h3>
+        <p class="archive__item-role">Data Science Intern · Austin, TX · May 2026 – August 2026</p>
+      </div>
+
+      <div class="list__item">
+        <h3 class="archive__item-title">AstraZeneca</h3>
+        <p class="archive__item-role">Operations Data Science Intern · Coppell, TX · May 2025 – December 2025</p>
+      </div>
+
+      <div class="list__item">
+        <h3 class="archive__item-title">The Daily Texan</h3>
+        <p class="archive__item-role">Data Scientist · January 2025 – Present</p>
+      </div>
+
+      <div class="list__item">
+        <h3 class="archive__item-title">Big Data in Biology Lab, UT Austin</h3>
+        <p class="archive__item-role">Undergraduate Peer Mentor &amp; Research Assistant · January 2024 – Present</p>
+      </div>
+
+      <div class="list__item">
+        <h3 class="archive__item-title">First Principles Dental Training</h3>
+        <p class="archive__item-role">Software Engineer · February 2025 – May 2025</p>
+      </div>
+
+      <h2 id="coursework">Relevant Coursework</h2>
+
+      <div class="coursework-line">
+        <strong>Statistics &amp; Mathematics</strong>
+        Probability and Statistical Inference, Mathematical Statistics I, Regression Analysis, Advanced Statistical Methods, Intermediate Statistical Methods, Statistical Thinking, Linear Algebra/Matrix Theory (Honors), Discrete Mathematics
+      </div>
+      <div class="coursework-line">
+        <strong>Computer Science</strong>
+        Elements of Software Design, Elements of Databases, Elements of Data Visualization, Introduction to Data Science
+      </div>
+      <div class="coursework-line">
+        <strong>Machine Learning &amp; Applied Data Science</strong>
+        Practical Machine Learning, Machine Learning Text Analysis, Data Product Development, Big Data in Biology (FRI), Bias
+      </div>
+
+```
+
+<div class="page__footer">Last built on `r format(Sys.time(), "%B %d, %Y at %H:%M:%S %Z")`</div>
+
+```{=html}
+    </section>
+  </article>
+</div>
+```

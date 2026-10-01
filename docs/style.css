@@ -1,0 +1,170 @@
+:root {
+  --bg: #ffffff;
+  --footer-bg: #f2f3f3;
+  --text: #3f4549;
+  --text-light: #8d9192;
+  --border: #e8e8e8;
+  --accent: #bf5700;
+  --radius: 0;
+  --masthead-h: 60px;
+  --sidebar-w: 250px;
+  --maxw: 1280px;
+}
+
+* { box-sizing: border-box; }
+
+.main-container { max-width: 100% !important; padding: 0 !important; }
+
+/* rmarkdown auto-injects an h1 from the YAML title above the body;
+   the sidebar already shows the name, so hide the duplicate. */
+h1.title.toc-ignore { display: none; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding-top: var(--masthead-h);
+}
+
+a { color: inherit; }
+
+/* Masthead */
+.masthead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--masthead-h);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  z-index: 20;
+}
+.masthead__inner-wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.masthead__menu ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 1.75em; }
+.masthead__menu-item--lg a { font-weight: 700; text-decoration: none; }
+.masthead__menu-item a { text-decoration: none; color: var(--text); font-size: 0.92rem; padding-bottom: 4px; }
+.masthead__menu-item a:hover { color: var(--accent); }
+.masthead__menu-item.selected a { border-bottom: 2px solid var(--accent); color: var(--accent); }
+
+/* Main two-column layout */
+#main {
+  max-width: var(--maxw);
+  margin: 2em auto 0;
+  padding: 0 1.5em 3em;
+  display: flex;
+  align-items: flex-start;
+  gap: 3em;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 0 0 var(--sidebar-w);
+  position: sticky;
+  top: calc(var(--masthead-h) + 2em);
+}
+.author__avatar img {
+  width: 175px;
+  max-width: 100%;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid var(--border);
+}
+.author__name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0.6em 0 0.3em;
+}
+.author__bio {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0 0 1.1em;
+  line-height: 1.5;
+}
+.author__urls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.author__urls li {
+  font-size: 0.85rem;
+  margin-bottom: 0.6em;
+  color: var(--text-light);
+}
+.author__urls a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text);
+}
+.author__urls a:hover { color: var(--accent); text-decoration: underline; }
+.author__urls svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+/* Page content */
+.page { flex: 1 1 auto; min-width: 0; }
+.page__title { font-size: 1.9rem; margin: 0 0 0.2em; line-height: 1.15; }
+.page__lead { font-size: 1.05rem; color: var(--text-light); margin: 0 0 1.5em; }
+
+.page__content h2 {
+  font-size: 1.3rem;
+  margin: 2em 0 0.8em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--border);
+}
+.page__content section:first-of-type h2 { margin-top: 0; }
+.page__content p { margin: 0 0 1.1em; }
+
+/* Archive-style list items (experience / coursework / projects) */
+.list__item { margin-bottom: 1.6em; }
+.list__item:last-child { margin-bottom: 0; }
+.archive__item-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 0.2em;
+}
+.archive__item-title a { text-decoration: underline; text-decoration-color: var(--border); color: var(--accent); }
+.archive__item-title a:hover { text-decoration-color: var(--accent); }
+.archive__item-meta {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--text-light);
+  margin: 0 0 0.4em;
+}
+.archive__item-role {
+  font-size: 1rem;
+  color: var(--text);
+  margin: 0 0 0.4em;
+}
+.archive__item-excerpt { font-size: 0.92rem; margin: 0; }
+
+.coursework-line { margin-bottom: 0.9em; font-size: 0.92rem; }
+.coursework-line:last-child { margin-bottom: 0; }
+.coursework-line strong { display: block; margin-bottom: 0.2em; color: var(--accent); }
+
+/* Footer */
+.page__footer {
+  margin-top: 3em;
+  padding-top: 1.2em;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 860px) {
+  #main { flex-direction: column; gap: 2em; }
+  .sidebar { position: static; flex: 1 1 auto; width: 100%; }
+  .masthead__menu ul { gap: 1em; flex-wrap: wrap; }
+}
